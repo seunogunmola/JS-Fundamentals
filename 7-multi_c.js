@@ -1,15 +1,7 @@
-const args = process.argv.slice(2);
-let count = args[0];
-if (isNaN(count)) {
-    console.log("Missing number of occurrences");
-}
+const x = Number(process.argv[2]);
 
-let i = 0;
-while (i < count) {
-    console.log("C is fun");
-    i++;
-}
-
-for (i; i < count; i++) {
-    console.log("C is fun");
+if (isNaN(x)) {
+  console.log('Missing number of occurrences');
+} else {
+  for (let i = 0; i < x; i++) console.log('C is fun');
 }
