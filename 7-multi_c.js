@@ -1,11 +1,15 @@
 const args = process.argv.slice(2);
 let count = args[0];
-if(isNaN(count)){
+if (isNaN(count)) {
     console.log("Missing number of occurrences");
 }
 
 let i = 0;
-while(i < count){
+while (i < count) {
     console.log("C is fun");
     i++;
+}
+
+for (i; i < count; i++) {
+    console.log("C is fun");
 }
