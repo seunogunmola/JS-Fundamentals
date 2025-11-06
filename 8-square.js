@@ -1,7 +1,9 @@
-const x = Number(process.argv[2]);
+const size = Number(process.argv[2]);
 
-if(isNaN(x)){
-    console.log("Missing size")
-}else{
-    for(let i = 0; i < x; i++) console.log('X'.repeat(x));
+if (isNaN(size)) {
+  console.log('Missing size');
+} else {
+  for (let i = 0; i < size; i++) {
+    console.log('X'.repeat(size));
+  }
 }
